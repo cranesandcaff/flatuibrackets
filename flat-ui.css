@@ -1,0 +1,117 @@
+/** SIDEBAR **/
+#sidebar, #working-set-header, #open-files-container, #project-files-container,#main-toolbar, #main-toolbar .buttons{
+	background-color:#ecf0f1!important;
+	text-shadow:none;
+	color:#333!important;
+}
+#open-files-container ul li .file-status-icon{
+	text-shadow:none;
+}
+ /* Working files */
+#working-set-header, #open-files-container{
+	color:#2c3e50!important;
+	background:#ecf0f1!important; 
+}
+/* "working files" header and folder header*/
+#project-files-header, #working-set-header{
+	color:#2c3e50!important;
+}
+
+/* Delimiter between "working files" and project files */
+#project-files-header{ border-top: 0;} 
+/* Open url when hover */
+#project-dropdown-toggle, #project-files-header{background:#ecf0f1}
+#project-dropdown-toggle:hover{ 
+    color:#2c3e50!important;
+    background:rgba(255,255,255,0.1);
+}
+/* Files, folder and extensions */
+.jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked { 
+	color:#2c3e50!important;
+}
+/* Files, folder and extensions in "working files"*/
+#open-files-container li a, #open-files-container li .extension{
+	color:#2c3e50!important;
+}
+#sidebar #open-files-container ul li.selected a, #sidebar #open-files-container ul li.selected a span.extension{color:#333!important;}
+.sidebar-selection, .sidebar-selection li a, .sidebar-selection-triangle{ /* Selected file or folder */
+	background:#3498db;
+	color:#333!important;
+}
+.sidebar-selection-triangle.triangle-visible::before{
+	border-left:0;
+}
+
+
+#status-bar,#status-bar #status-indicators, #status-bar #status-info{ /* Bottom status bar */
+    background:#3498db;
+	color:#fff!important;
+}
+
+
+.inline-widget{ /* Quick-edit styles */
+	background:rgba(255,255,255, 0.06);
+}
+
+.cm-s-flat-ui.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-flat-ui.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {	
+  background: rgba(255, 255, 255, 0.1);
+}
+ 
+/** CodeMirror styles **/
+.cm-s-flat-ui.CodeMirror { background: #222c34 ; color: #34D58E ;}
+.cm-s-flat-ui div.CodeMirror-selected { background: #3A526B !important; }
+.cm-s-flat-ui .CodeMirror-gutters { background: #1e272e ;}
+.cm-s-flat-ui .CodeMirror-linenumber { color: #384956  ; }
+.cm-s-flat-ui .CodeMirror-cursor { border-left: 1px solid #2ecc71 !important; }
+.cm-s-flat-ui .CodeMirror-sizer{
+	padding-bottom: 180px;
+}
+
+/*Comment*/
+.cm-s-flat-ui span.cm-comment { color: #3498db; }
+/*Atribbute value ex. #f00 in color:#f00;*/
+.cm-s-flat-ui span.cm-atom { color: #e67055; }
+/*Tags ex. ul or <ul>*/
+.cm-s-flat-ui span.cm-tag { color: #f4cf56; }
+/*Numbers*/
+.cm-s-flat-ui span.cm-number { color: #3498db; }
+/*Attribute ex. rel, href, name*/
+.cm-s-flat-ui span.cm-attribute{color:#e7742b}
+/*Element call ex. array, class, public function, if, elseif, !important*/
+.cm-s-flat-ui span.cm-keyword { color: #f4cf56; }
+/*String elements ex. "description" in name="description" - including quotation*/
+.cm-s-flat-ui span.cm-string { color: #bd85e3; }
+/*Meta elements like ex.: <!DOCTYPE html>*/
+.cm-s-flat-ui span.cm-meta { color: #23c26a; }
+/*Variable name ex. class Variable_name */
+.CodeMirror .cm-variable{color:#ecdd5d;} 
+/*Variable declaration ex. $variable */
+.cm-s-flat-ui span.cm-variable-2{ color: #e67e22; } 
+/*variable definition*/
+.cm-s-flat-ui span.cm-def{color:#3498db;} 
+/*Generally incomplete things or errors*/
+.cm-s-flat-ui span.cm-error { color: #c0392b; }
+/*Styles IDs in CSS possibly others*/
+.cm-s-flat-ui span.cm-builtin { color: #4da5e0; }
+/*CSS Properties*/
+.cm-s-flat-ui span.cm-property { color: #2ecc71;}
+/*Math operators*/
+.cm-s-flat-ui span.cm-operator { color: #16a085;}
+/*Appears to be class names*/
+.cm-s-flat-ui span.cm-qualifier{ color: #1abc9c; }
+/*Matching Tags*/
+.cm-s-flat-ui span.CodeMirror-matchingtag {color:#9b59b6; background:#19242e}
+/*Matching/Unmatching brackets*/
+.cm-s-flat-ui.CodeMirror .CodeMirror-matchingbracket {
+	border-bottom: 1px solid #2ecc71!important;
+    color: #2ecc71;
+}
+.cm-s-flat-ui.CodeMirror .CodeMirror-unmatchingbracket {
+	border-bottom: 1px solid #c0392b!important;
+    color: #c0392b;
+}
+/*Everything below this comment has a crazy color in order to help decipher what they do, they were in other themes I looked at but don't seem to do anything at all.*/
+.cm-s-flat-ui span.cm-variable-3 {color:#0f0; background-color:#000;}
+.cm-s-flat-ui span.cm-bracket { color: #f00; background-color:#000;}
+.cm-s-flat-ui span.cm-special { color: #f0f; background-color:#000;}
+.cm-s-flat-ui span.cm-link { color: #fff; background-color:#000; }
